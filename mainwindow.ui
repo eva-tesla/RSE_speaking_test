@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1043</width>
+    <height>616</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="VariantChoiseWidget" name="variantChoiseWidget"/>
+      <widget class="StartWidget" name="startWidget"/>
+      <widget class="PauseWidget" name="pauseWidget"/>
+      <widget class="ExaminateWidget" name="examinateWidget"/>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>VariantChoiseWidget</class>
+   <extends>QWidget</extends>
+   <header>variantchoisewidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>StartWidget</class>
+   <extends>QWidget</extends>
+   <header>startwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>PauseWidget</class>
+   <extends>QWidget</extends>
+   <header>pausewidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ExaminateWidget</class>
+   <extends>QWidget</extends>
+   <header>examinatewidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
